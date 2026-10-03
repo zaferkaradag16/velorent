@@ -1,0 +1,8 @@
+<%@ page pageEncoding="UTF-8" %>
+</main>
+<footer class="bottom">
+    Пункт проката велосипедов &middot; учебное веб-приложение (JSP, Servlet, EJB, JPA)
+    &middot; сервер: <%= application.getServerInfo() %>
+</footer>
+</body>
+</html>

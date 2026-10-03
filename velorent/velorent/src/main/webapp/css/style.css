@@ -1,0 +1,162 @@
+/* оформление страниц приложения */
+body {
+    margin: 0;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-size: 15px;
+    color: #222;
+    background: #f3f5f2;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 12px 30px;
+    background: #2e7d32;
+    color: #fff;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.top nav a {
+    color: #fff;
+    margin-right: 18px;
+    text-decoration: none;
+}
+
+.top nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px 30px 30px;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+}
+
+h1 {
+    color: #2e7d32;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+th {
+    background: #e8f0e8;
+}
+
+table.info {
+    width: auto;
+}
+
+td.right {
+    text-align: right;
+}
+
+table.journal td, table.journal th {
+    white-space: nowrap;
+}
+
+tr.open {
+    background: #fff8e1;
+}
+
+.status {
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.status.FREE   { background: #c8e6c9; }
+.status.RENTED { background: #ffe0b2; }
+.status.REPAIR { background: #ffcdd2; }
+
+.cards {
+    display: flex;
+    gap: 12px;
+    margin: 15px 0 25px;
+}
+
+.card {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background: #fafafa;
+}
+
+.card .num {
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.card.free   { border-color: #66bb6a; }
+.card.rented { border-color: #ffa726; }
+.card.repair { border-color: #ef5350; }
+
+.form label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.form input, .form select {
+    display: block;
+    width: 320px;
+    padding: 5px;
+    margin-top: 4px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+button, .btn {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #2e7d32;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form.inline {
+    margin: 0;
+}
+
+form.inline button {
+    padding: 3px 8px;
+    font-size: 13px;
+}
+
+.msg {
+    padding: 8px 12px;
+    background: #e3f2fd;
+}
+
+.msg.error {
+    background: #ffebee;
+    color: #b71c1c;
+}
+
+.bottom {
+    text-align: center;
+    color: #777;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
